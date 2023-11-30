@@ -505,6 +505,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -558,7 +559,11 @@ main {
   line-height: 1.6;
 }
 
-
+.page-lastupdate {
+  text-align: center;
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+}
 
 
 /*-----------------------------------*\
@@ -628,6 +633,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
 }
 
 
