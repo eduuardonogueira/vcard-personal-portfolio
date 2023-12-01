@@ -636,6 +636,18 @@ main {
   text-align: justify;
 }
 
+.timeline-item-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px;
+  color: var(--white-2);
+
+  > span {
+    color: var(--white-2);
+  }
+}
+
 
 /**
  * skills 
@@ -1032,17 +1044,6 @@ main {
     left: -43px;
   }
 
-  .timeline-item-location {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 4px;
-    color: var(--white-2);
-
-    > span {
-      color: var(--white-2);
-    }
-  }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
