@@ -335,7 +335,7 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
   > img {
-    border-radius: 30px;  
+    border-radius: 20px;  
   }
 }
 
@@ -844,7 +844,7 @@ main {
 }
 
 @media screen and (min-width: 580px) {
-
+  .avatar-box img { border-radius: 30px; }
 }
 
 
