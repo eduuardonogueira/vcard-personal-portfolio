@@ -47,7 +47,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar__new.png.jpg" alt="Luis Augusto" width="80">
+          <img src="./assets/images/my-avatar.jpg" alt="Luis Augusto" width="80">
         </figure>
 
         <div class="info-content">
@@ -121,7 +121,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Manaus, Amazonas, Brasil</address>
             </div>
 
           </li>
@@ -181,19 +181,19 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" translate="no" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" translate="no" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Academic Production</button>
+            <button class="navbar-link" translate="no" data-nav-link>Production</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Certificates</button>
+            <button class="navbar-link" translate="no" data-nav-link>Certificates</button>
           </li>
 
         </ul>
@@ -599,10 +599,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="academic production">
+      <article class="portfolio" data-page="production">
 
         <header>
-          <h2 class="h2 article-title">Portifolio</h2>
+          <h2 class="h2 article-title">Production</h2>
         </header>
 
         <section class="projects">
@@ -654,8 +654,13 @@
 
           </div>
 
-
           <ul class="project-list">
+
+            <!--
+              #####################
+              ###### ARTIGOS ######
+              #####################
+            -->
 
             <li class="project-item active" data-filter-item data-category="articles">
               <article class="project-card">
@@ -664,8 +669,11 @@
                   Controle Preditivo de Horizonte Irrestrito
                 </h3>
 
-                <p class="project-card-category">Articles</p>
-                 
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Articles</p>
+                </div>
+                
                 <p class="project-card-content">
                   Neste trabalho é investigado o controlador preditivo de horizonte irrestrito, ou UHPC.
                   É projetado no espaço de estado por meio do método GMVSS e baseado em modelo linear ARMAX.
@@ -676,174 +684,357 @@
                   contribuindo positivamente para as margens de estabilidade do sistema de controle (2022).
                 </p>
 
-                <a class="project-card-link" href="#">
+                <a class="project-card-link" href="https://ppgee.propesp.ufpa.br/ARQUIVOS/teses/2022/Tese%20de%20Doutorado%20(Vers%C3%A3o%20Completa%20UFPA%202022).pdf">
                   <button>read more</button>
                 </a>
 
               </article>
             </li>
             
+            <li class="project-item active" data-filter-item data-category="articles">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Controle Preditivo de Horizonte Irrestrito apllicado à um Sistema SISO Não Linear
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Articles</p>
+                </div>
+                
+                <p class="project-card-content">
+                  Este artigo apresenta o formalismo matemático, projeto e avaliação de um controlador preditivo 
+                  de horizonte irrestrito (UHPC) de ordem mínima aplicado a um processo químico não linear. 
+                  O método de projeto UHPC ainda é bastante novo e este artigo contribui ainda mais avaliando 
+                  sua aplicação em um sistema não linear e suas propriedades de robustez. A avaliação é realizada 
+                  por meio de simulações numéricas para degraus de referência e perturbações de carga para um único 
+                  sistema: o continuous stirred tank reactor (CSTR). O problema UHPC é avaliado sob um esquema de 
+                  controle incremental e baseado no modelo linear estocástico identificado. Os resultados temporais 
+                  e em frequência do UHPC são comparados aos resultados do controle preditivo generalizado (GPC) 
+                  usando o mesmo horizonte de predição de saída. Ambos os controladores são capazes de eliminar o 
+                  erro em regime permanente, porém o UHPC fornece maiores margens de estabilidade e atenuação de ruído, 
+                  sendo capaz de manter a mesma resposta em toda a faixa de operação do sistema de controle, sem degradar 
+                  o desempenho do controlador, o que não é o caso para o GPC (2022).
+                </p>
+
+                <a class="project-card-link" href="https://drive.google.com/file/d/1LhO6CRE-_nqY_J5qEg37fLrY1ZjNPbTv/view?usp=sharing">
+                  <button>read more</button>
+                </a>
+
+              </article>
+            </li>
             
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="articles">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Ganho Programado Tradicional e Rede de Controladores com Supervisão Fuzzy
+                </h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Articles</p>
+                </div>
+                
+                <p class="project-card-content">
+                  Neste trabalho são comparados o desempenho entre controladores por ganho programado tradicional 
+                  e uma rede de controladores locais com supervisão fuzzy. As análises são realizadas em uma válvula 
+                  não linear e uma planta Motor-Tacogerador. A supervisão fuzzy é inserida de forma a atenuar essas 
+                  mudanças bruscas, ponderando os valores dos controladores estáticos para encontrar um novo conjunto 
+                  de parâmetros a cada instante de tempo (2021).
+                </p>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
+                <a class="project-card-link" href="https://drive.google.com/file/d/1U-U8ncboZCmaCyN7nH7YjLqNzFwMx-uk/view?usp=sharing">
+                  <button>read more</button>
+                </a>
 
-                <h3 class="project-title">Finance</h3>
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="articles">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Projeto de Controlador LQG aplicado à um Sistema Eletrônico
+                </h3>
 
-                <p class="project-category">Web development</p>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Articles</p>
+                </div>
+                
+                <p class="project-card-content">
+                  Este trabalho apresenta uma aplicação prática de um controlador LQG (Linear Quadrático Gaussiano) 
+                  em um sistema eletrônico. O sistema é representada por um modelo discreto e linear de segunda ordem. 
+                  A análise de robustez é feita tanto para a malha de controle quanto para o filtro de Kalman. 
+                  Testes simulados e práticos do tipo: resposta ao degrau, perturbação de carga na entrada da planta, 
+                  saída da planta contaminada com ruído guaussiano são realizados a fim de avaliar o desempenho e a 
+                  robustez propiciados pelo controle LQG (2020).
+                </p>
 
-              </a>
+                <a class="project-card-link" href="https://drive.google.com/file/d/1MrVWquHZg5W3nZPy3amdR6wiKDrPflEc/view?usp=sharing">
+                  <button>read more</button>
+                </a>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="articles">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Projeto de Controlador PID Locais com Supervisão Fuzzy
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Articles</p>
+                </div>
+                
+                <p class="project-card-content">
+                  Este trabalho propõe uma estratégia fuzzy viável, do tipo rede de controladores convencionais locais 
+                  supervisionados por lógica fuzzy, objetivando a melhoria da estabilidade e robustez de um sistema 
+                  eletromecânico didático. Testes experimentais confirmam a superioridade do método inteligente proposto 
+                  sobre os métodos clássicos de controle para lidar com não linearidades e variações paramétricas do 
+                  sistema em toda a faixa de operação estudada (2019).
+                </p>
+
+                <a class="project-card-link" href="https://drive.google.com/file/d/11Vs2NuUUii88-lio08f49rpZAviYyrcz/view?usp=sharing">
+                  <button>read more</button>
+                </a>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="articles">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Classificador Neural para Intenção de Movimento do Braço e Antebraço
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Articles</p>
+                </div>
+                
+                <p class="project-card-content">
+                  Os sinais mioelétricos são ponteciais elétricos que representam a dinâmica da contração muscular e seu 
+                  estudo tem se mostrado relevante em aplicações na fisioterapia e engenharira de reabilitação para a 
+                  melhoria da qualidade de vida de indivíduos amputados ou com algum tipo de deficiência motora. 
+                  O artigo propõe um classicador neural que consiste de duas redes neurais feedforward em paralelo, 
+                  construído com o auxílio da ferramenta computacional MATLAB, para identificar a intenção de movimento 
+                  do braço e antebraço, podendo ser utilizado como fonte de comando para próteses mioelétricas e braços 
+                  robóticos. Simulações numéricas comprovam a eficácia do classificador desenvolvido (2019).
+                </p>
+
+                <a class="project-card-link" href="https://drive.google.com/file/d/1DmL2q97b-WHYIjjtGXEL0eJ6eftnDuQ3/view?usp=sharing">
+                  <button>read more</button>
+                </a>
+
+              </article>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <!--
+              ####################
+              ###### BANCAS ######
+              #################### 
+            -->
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
 
-                <h3 class="project-title">Orizon</h3>
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Sintonias de Controle PID Clássico e Avançado em Processos Benchmarks
+                </h3>
 
-                <p class="project-category">Web development</p>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
 
-              </a>
+                <p class="project-card-content">
+                  Raissa da Costa Branco. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2022).
+                </p>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Projeto de Controladores Clássico e Moderno para Drone Quadrotor
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
+
+                <p class="project-card-content">
+                  Carlos Roozembergh Porto da Silva Junior. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2021).
+                </p>
+
+              </article>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Estudo Comparativo entre Controladores PI Clássico e Adaptativo para um Forno de Indução Eletromagnética
+                </h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
+                <p class="project-card-content">
+                  Kelvin Mathaeus Costa Mattos. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2021).
+                </p>
 
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+              </article>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Análise de Desempenho e Robustez dos Controladores Preditivos GMV, DMC e GPC Aplicados em uma Planta Pêndulo Amortecido
+                </h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
+                <p class="project-card-content">
+                  Daniel Abreu Macedo da Silva. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2021).
+                </p>
 
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
+              </article>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Estudo Comparativo dos Controladores PID, IMC, GMV e GPC em Processos Benchmarks
+                </h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
+                <p class="project-card-content">
+                  Jefferson Tavares Leitão. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2021).
+                </p>
 
-                <h3 class="project-title">DSM.</h3>
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Identificação, Modelagem e Controle de Velocidade de Motor Tacogerador
+                </h3>
 
-                <p class="project-category">Web design</p>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
 
-              </a>
+                <p class="project-card-content">
+                  Silva Batista. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2020).
+                </p>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Controle de Posição de um Braço Robótico com um Grau de Liberdade para Diferentes Cargas
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
+
+                <p class="project-card-content">
+                  Gustavo da Silva Madi. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2019).
+                </p>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Projeto e Controle de Posição de um Protótipo Túnel de Vento Vertical Utilizando Diferentes Estratégias de Controle
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
+
+                <p class="project-card-content">
+                  Linsley da Costa Oliveira Dias. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2019).
+                </p>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Projeto, Identificação e Controle de um Processo Fan and Plate
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
+
+                <p class="project-card-content">
+                  Thiago José Alves Monteiro. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2019).
+                </p>
+
+              </article>
+            </li>
+            
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Construção e Controle de uma Prótese Mecânica Ativa de Baixo Custo Utilizando Impressão 3D
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
+
+                <p class="project-card-content">
+                  João Carlos Ferreira Gonçalves. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2018).
+                </p>
+
+              </article>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="examining board">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Proposta de Modelamento de Sistemas Mioelétricos para Classificação de Movimentos
+                </h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Examining Board</p>
+                </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
+                <p class="project-card-content">
+                  Gabriela Souza de Amorim. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2018).
+                </p>
 
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+              </article>
             </li>
 
           </ul>
