@@ -563,6 +563,7 @@ main {
   text-align: center;
   color: var(--light-gray);
   font-size: var(--fs-8);
+  font-weight: bold;
 }
 
 
@@ -813,7 +814,7 @@ main {
   display: flex;
   gap: 4px;
   align-items: center;
-  color: var(--light-gray-70);
+  color: var(--orange-yellow-crayola);
   font-size: 14px;
   font-weight: var(--fw-300);
   margin-bottom: 8px;
