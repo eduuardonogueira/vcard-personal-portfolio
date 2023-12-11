@@ -434,16 +434,16 @@ main {
 
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
-  padding-left: 7px;
 }
 
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
+  display: flex;
 }
 
 

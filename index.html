@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Radamantus Currículo</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
+  <link rel="shortcut icon" href="./assets/images/icon-head.svg" type="image/x-icon">
   <!--
     - custom css link
   -->
@@ -133,29 +132,41 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a target="_blank" href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a target="_blank" href="#" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://instagram.com/gutossauros?igshid=NGVhN2U2NjQ0Yg==" class="social-link">
+            <a target="_blank" href="https://instagram.com/gutossauros?igshid=NGVhN2U2NjQ0Yg==" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/luismesquitacastro/" class="social-link">
+            <a target="_blank" href="https://www.linkedin.com/in/luismesquitacastro/" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
           
+          <li class="social-item">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5591982158527&text=Lu%C3%ADs%20Augusto" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a target="_blank" href="https://t.me/gutossauros" class="social-link">
+              <i class="ph ph-telegram-logo"></i>
+            </a>
+          </li>
+
         </ul>
 
       </div>
@@ -317,8 +328,10 @@
 
         </section>
 
+        <!--  -->
+
         <footer>
-          <p class="page-lastupdate">Última Atualização: 30 de novembro de 2023</p>
+          <p class="page-lastupdate">Última Atualização: 10 de Dezembro de 2023</p>
         </footer>
         
       </article>
@@ -501,24 +514,37 @@
 
         </section>
 
+        <!-- Skills -->
+
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
 
+          <!--
+            #############################
+            ######## SKILLS LIST ########
+            #############################
+          -->
+
           <ul class="skills-list content-card">
 
+            
+            <!-- START SKILLS -->
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="90">90%</data>
+                <h5 class="h5">Python</h5>  <!-- SKILLS NAME -->
+                <data value="90">90%</data>  <!-- SKILLS PROGRESS - change inside property: value="90" -->
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+              <div class="skill-progress-bg"> 
+                <div class="skill-progress-fill" style="width: 90%;"></div> <!-- change inside property: style="width: 90%;" , only number value -->
               </div>
+
+              <!-- When changing skill progress, change it within the <data value="number"> and the <div style="width: number%;" -->
 
             </li>
+            <!-- END SKILLS -->
 
             <li class="skills-item">
 
@@ -596,7 +622,7 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #PRODUCTION
       -->
 
       <article class="portfolio" data-page="production">
@@ -653,28 +679,30 @@
             </ul>
 
           </div>
+          
+          <!--
+            ##############################
+            ######## ARTICLE LIST ########
+            ##############################
+          -->
 
           <ul class="project-list">
 
-            <!--
-              #####################
-              ###### ARTIGOS ######
-              #####################
-            -->
 
-            <li class="project-item active" data-filter-item data-category="articles">
+            <!-- START ARTICLE -->
+            <li class="project-item active" data-filter-item data-category="articles"> <!-- ARTICLE CATEGORI -> Inside Tag: data-category="articles" -->
               <article class="project-card">
-                <h3 class="project-card-title">
+                <h3 class="project-card-title"> <!-- ARTICLE TITLE -->
                   Contribuições ao Controle de Variância Mínima Generalizado: 
                   Controle Preditivo de Horizonte Irrestrito
                 </h3>
 
                 <div class="project-card-category">
                   <i class="ph ph-tag-chevron"></i>
-                  <p>Articles</p>
+                  <p>Articles</p> <!-- ARTICLE TAG -->
                 </div>
                 
-                <p class="project-card-content">
+                <p class="project-card-content"> <!-- ARTICLE TEXT CONTENT -->
                   Neste trabalho é investigado o controlador preditivo de horizonte irrestrito, ou UHPC.
                   É projetado no espaço de estado por meio do método GMVSS e baseado em modelo linear ARMAX.
                   Sua lei de controle é implementada no formato polinomial RST de controlador para o controle 
@@ -684,12 +712,13 @@
                   contribuindo positivamente para as margens de estabilidade do sistema de controle (2022).
                 </p>
 
-                <a class="project-card-link" href="https://ppgee.propesp.ufpa.br/ARQUIVOS/teses/2022/Tese%20de%20Doutorado%20(Vers%C3%A3o%20Completa%20UFPA%202022).pdf">
+                <a class="project-card-link" href="https://ppgee.propesp.ufpa.br/ARQUIVOS/teses/2022/Tese%20de%20Doutorado%20(Vers%C3%A3o%20Completa%20UFPA%202022).pdf"> <!-- ARTICLE LINK -> Inside Tag: href="articlelink" -->
                   <button>read more</button>
                 </a>
 
               </article>
             </li>
+            <!-- END ARTICLE -->
             
             <li class="project-item active" data-filter-item data-category="articles">
               <article class="project-card">
@@ -831,31 +860,67 @@
               </article>
             </li>
 
+            <li class="project-item active" data-filter-item data-category="article">
+              <article class="project-card">
+                <h3 class="project-card-title">
+                  Estimação de Movimentos do Punho com Filtro de Kalman para Controle de Próteses Ativas
+                </h3>
+
+                <div class="project-card-category">
+                  <i class="ph ph-tag-chevron"></i>
+                  <p>Article</p>
+                </div>
+                
+                <p class="project-card-content">
+                  A funcionalidade de próteses mioelétricas, disponíveis para pessoas que sofreram algum 
+                  tipo de amputação ou defeitos congênitos, ainda precisam ser bastante aprimoradas. 
+                  Pois, o objetivo da prótese é substituir a deficiência do seu usuário e devolver as 
+                  funções do membro perdido. Este artigo propõe um método de estimação de movimento a 
+                  partir de sinais mioelétricos para controle de próteses elétricas. No método de 
+                  estimação utiliza-se o filtro de Kalman para otimizar o pré-processamento do sinal 
+                  mioelétrico. Para validação do método são utilizados os músculos flexor radial do 
+                  carpo e extensor ulnar do carpo para estimação do movimento de flexão e extensão do 
+                  punho e realiza-se o controle de abrir e fechar uma garra robótica proporcionalmente 
+                  aos níveis de contrações estimados dos músculos investigados. Os testes experimentais 
+                  realizados em tempo real para estimação de movimentos e controle de uma garra robótica 
+                  comprovam a eficácia do método de estimação de movimento desenvolvido (2018).
+                </p>
+
+                <a class="project-card-link" href="https://www.sba.org.br/open_journal_systems/index.php/cba/article/view/328">
+                  <button>read more</button>
+                </a>
+
+              </article>
+            </li>
+
 
             <!--
-              ####################
-              ###### BANCAS ######
-              #################### 
+              #############################
+              ###### EXAMINING BOARD ######
+              #############################
             -->
 
 
-            <li class="project-item active" data-filter-item data-category="examining board">
+            <!-- START EXAMINING BOARD -->
+            <li class="project-item active" data-filter-item data-category="examining board"> <!-- EXAMINING BOARD -> Inside Tag: data-category="examining board" -->
               <article class="project-card">
-                <h3 class="project-card-title">
+                <h3 class="project-card-title"> <!-- EXAMINING BOARD TITLE -->
                   Sintonias de Controle PID Clássico e Avançado em Processos Benchmarks
                 </h3>
 
                 <div class="project-card-category">
                   <i class="ph ph-tag-chevron"></i>
-                  <p>Examining Board</p>
+                  <p>Examining Board</p> <!-- EXAMINING BOARD CATEGORY -->
                 </div>
 
-                <p class="project-card-content">
+                <p class="project-card-content"> <!-- EXAMINING BOARD TEXT CONTENT -->
                   Raissa da Costa Branco. Engenharia de Controle e Automação. Instituto Federal de Educação, Ciência e Tecnologia do Pará (2022).
                 </p>
 
               </article>
             </li>
+            <!-- END EXAMINING BOARD -->
+
             
             <li class="project-item active" data-filter-item data-category="examining board">
               <article class="project-card">
@@ -1068,28 +1133,38 @@
             <h3 class="h3">Licenses and Certifications</h3>
           </div>
 
+
+          <!--
+            ##############################
+            ##### CERTIFICATES LIST ######
+            ##############################
+          -->
+
           <ol class="timeline-list">
 
+
+            <!-- START CERTIFICATES -->
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Estatística com Python: Correlação e Regressão</h4>
+              <h4 class="h4 timeline-item-title">Estatística com Python: Correlação e Regressão</h4>  <!-- CERTIFICATES TITLE -->
 
               <div class="timeline-item-box">
                 <div class="timeline-item-description">
                   <i class="ph ph-clock"></i>
-                  <span>10 horas</span>
+                  <span>10 horas</span> <!-- CERTIFICATES WORKLOAD -->
                 </div>
                 <div class="timeline-item-description">
                   <i class="ph ph-book-open"></i>
-                  <span>Alura</span>
+                  <span>Alura</span> <!-- CERTIFICATES PLATAFORM -->
                 </div>
                 <div class="timeline-item-description">
                   <i class="ph ph-calendar-blank"></i>
-                  <span>2023</span>
+                  <span>2023</span> <!-- CERTIFICATES YEAR -->
                 </div>
               </div>
 
             </li>
+            <!-- END CERTIFICATES -->
 
             <li class="timeline-item">
 
